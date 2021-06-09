@@ -1,6 +1,6 @@
-output "vpc_subnets" {
-  value = data.ibm_is_vpc.vpc.subnets
-}
+# output "vpc_subnets" {
+#   value = data.ibm_is_vpc.vpc.subnets
+# }
 
 output "vpn_instance_id" {
   value       = ibm_is_instance.vpn.id
@@ -13,7 +13,7 @@ output "vpn_public_ip" {
 }
 
 output "vpn_security_group_id" {
-  value       = ibm_is_security_group.bastion.id
+  value       = ibm_is_security_group.vpn.id
   description = "ID of the security group assigned to the VPN interface"
 }
 

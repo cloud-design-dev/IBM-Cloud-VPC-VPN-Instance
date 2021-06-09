@@ -13,3 +13,7 @@ data "ibm_is_subnet" "subnet" {
 data "ibm_resource_group" "group" {
   name = var.resource_group
 }
+
+data "ibm_is_ssh_key" "ssh_key" {
+  name = var.ssh_key
+}
